@@ -1,0 +1,177 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #342344;
+
+    background: linear-gradient(
+        135deg,
+        #ffe0ec,
+        #e8ddff,
+        #d9f5ff
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+}
+
+.page {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.top {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #805b9b;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 12px 0;
+    color: #552d72;
+}
+
+.intro {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #604c70;
+    margin-bottom: 22px;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 28px;
+    padding: 30px 24px;
+
+    box-shadow: 0 18px 50px
+    rgba(83,48,112,0.15);
+}
+
+.emoji {
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    max-width: 420px;
+    padding: 16px;
+
+    border: 2px solid #e3d2ef;
+    border-radius: 14px;
+
+    font-size: 17px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #a56bc6;
+}
+
+button {
+    margin-top: 16px;
+    border: none;
+    border-radius: 14px;
+    padding: 15px 25px;
+
+    background: linear-gradient(
+        100deg,
+        #8b4db0,
+        #d45f9c
+    );
+
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#result {
+    display: none;
+    margin: 24px auto 0;
+    max-width: 480px;
+    padding: 22px;
+
+    border-radius: 20px;
+    background: #fff5fb;
+    border: 2px dashed #d99ac7;
+}
+
+#giftIcon {
+    font-size: 54px;
+}
+
+#giftTitle {
+    font-size: 25px;
+    color: #713c8d;
+}
+
+#giftText {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.small {
+    font-size: 13px;
+    color: #8a7693;
+    margin-top: 22px;
+}
+
+.footer {
+    margin-top: 18px;
+    color: #795f89;
+    font-size: 13px;
+}
+
+.shake {
+    animation: pop 0.45s ease;
+}
+
+@keyframes pop {
+
+    0% {
+        transform: scale(0.85);
+        opacity: 0.2;
+    }
+
+    70% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media(max-width: 480px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .card {
+        padding: 24px 17px;
+    }
+
+}
